@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AgentContract.xml — role + tool definitions for the Inbound Career Agent.
+  Tool-agnostic (XML-DOM). v0.1 STUB: roles + tool inventory declared; detailed
+  wiring (schemas, endpoints) arrives in P3. Read alongside AGENTS.md and BOOTSTRAP.md.
+-->
+<contract version="0.1" status="stub">
+
+  <meta>
+    <name>Inbound Career Agent</name>
+    <architecture tier="orchestrator + playbooks" crew="single-agent"/>
+    <language user-facing="ru" internals="en"/>
+    <search default="tavily" fallback="deepseek-websearch-mcp"/>
+  </meta>
+
+  <roles>
+    <role id="orchestrator">
+      <description>The single agent the user launches. Reads playbooks on demand. Drafts only; never auto-acts.</description>
+      <entry onramp="green" reads="LAUNCHER.md"/>
+      <entry onramp="usual" reads="SETUP.md"/>
+      <entry onramp="agent-driven" reads="AGENTS.md"/>
+      <gate ref="alignment-screen"/>
+      <must-run-before-work ref="ritual-B"/>
+    </role>
+  </roles>
+
+  <tools>
+    <tool id="search" status="wired-p3">
+      <provider id="tavily" tier="free" quota="1000/month"/>
+      <provider id="deepseek-websearch-mcp" src="https://github.com/lyumeng/websearch-deepseek" requires="key+balance"/>
+      <rule>No scraping. API / official endpoints only.</rule>
+    </tool>
+    <tool id="file-io" status="wired">
+      <scope>workspace only</scope>
+      <rule>Never write user data into the repo. Plain MD/XML only (portability).</rule>
+    </tool>
+    <tool id="alignment-screen" status="wired-p3">
+      <description>Scores an opportunity vs profile/positioning.md before any suggested reply. Surfaces misalignment to the user.</description>
+    </tool>
+    <!-- P3 will add detailed tool defs: company-research, profile-draft, content-draft, comp-anchor, weekly-digest -->
+  </tools>
+
+  <playbooks>
+    <playbook id="00-ritual-A-intake"        phase="P1" status="planned"/>
+    <playbook id="00-ritual-B-explication"   phase="P1" status="planned"/>
+    <playbook id="01-market-sense"           phase="P2" status="planned"/>
+    <playbook id="02-qualify-inbound"        phase="P2" status="planned"/>
+    <playbook id="03-brand-engine"           phase="P2" status="planned"/>
+    <playbook id="04-profile-optimize"       phase="P2" status="planned"/>
+    <playbook id="05-conversation-prep"      phase="P2" status="planned"/>
+    <playbook id="06-active-search-fallback" phase="P2" status="planned"/>
+    <playbook id="07-weekly-digest"          phase="P2" status="planned"/>
+  </playbooks>
+
+  <constraints>
+    <c>Human-in-the-loop: no auto-apply / post / email / connect / publish.</c>
+    <c>API-only; no scraping.</c>
+    <c>User-facing output in Russian.</c>
+    <c>No personal data or secrets in the repo.</c>
+    <c>Never infer positioning; always ask (Ritual A).</c>
+  </constraints>
+
+  <status phase="P0" done="repo-skeleton, on-ramp-docs, contract-stub" next="P1 intake + explication playbooks"/>
+</contract>

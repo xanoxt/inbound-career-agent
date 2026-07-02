@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# If anyone runs the agent inside the repo, keep generated workspace dirs out of git
+/profile/
+/output/
+
+# Secrets / env (never commit)
+.env
+.env.*
+*.key
+*.pem
+
+# OS
+Thumbs.db
