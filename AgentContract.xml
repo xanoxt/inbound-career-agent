@@ -41,8 +41,8 @@
   </tools>
 
   <playbooks>
-    <playbook id="00-ritual-A-intake"        phase="P1" status="planned"/>
-    <playbook id="00-ritual-B-explication"   phase="P1" status="planned"/>
+    <playbook id="00-ritual-A-intake"        phase="P1" status="done"/>
+    <playbook id="00-ritual-B-explication"   phase="P1" status="done"/>
     <playbook id="01-market-sense"           phase="P2" status="planned"/>
     <playbook id="02-qualify-inbound"        phase="P2" status="planned"/>
     <playbook id="03-brand-engine"           phase="P2" status="planned"/>
@@ -60,5 +60,5 @@
     <c>Never infer positioning; always ask (Ritual A).</c>
   </constraints>
 
-  <status phase="P0" done="repo-skeleton, on-ramp-docs, contract-stub" next="P1 intake + explication playbooks"/>
+  <status phase="P1" done="repo-skeleton, on-ramp-docs, contract-stub, intake-playbook, explication-playbook" next="P2 the 7 capability playbooks"/>
 </contract>
