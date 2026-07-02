@@ -52,8 +52,10 @@ No capability playbook runs before Ritual B is confirmed.
 | `playbooks/ru/`, `playbooks/en/` | Capability runbooks per locale | per locale |
 | `templates/ru/`, `templates/en/` | Blank templates per locale, copied into the workspace | per locale |
 | `market-config.md` | Market source map (RU default, swappable) | RU |
-| `claude-code-adapter/` | Optional Claude Code wiring | EN |
+| `claude-code-adapter/` | Optional Claude Code wiring (CLAUDE.md pointer + README) | EN |
 | `git-helper/` | Step-by-step git setup for path-2 stragglers | RU + EN |
+| `scripts/smoke_test.py` | Reusable repo-consistency smoke test | EN |
+| `SMOKE-TEST.md` | Latest smoke-test results | EN |
 
 ## 7. Workspace (generated on the user's machine, NOT in the repo)
 

@@ -74,5 +74,5 @@
     <c>Never infer positioning; always ask (Ritual A).</c>
   </constraints>
 
-  <status phase="P4" done="playbooks x2 locales + templates x2 locales + locale-aware docs + tooling wiring + market-config v1 (sources/query-templates/comp-methodology/employer-archetypes/inbound-channel-map; market-vs-locale distinction)" next="P5 Claude-Code adapter + smoke test"/>
+  <status phase="P5" done="playbooks x2 locales + templates x2 locales + locale-aware docs + tooling wiring + market-config v1 + claude-code-adapter (CLAUDE.md/README) + scripts/smoke_test.py + SMOKE-TEST.md (all checks pass)" next="v1 complete — publish repo, fill the REPO_URL placeholder, then real-user dogfood"/>
 </contract>
