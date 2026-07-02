@@ -74,5 +74,5 @@
     <c>Never infer positioning; always ask (Ritual A).</c>
   </constraints>
 
-  <status phase="P3" done="all 9 playbooks x2 locales + 3 templates x2 locales + locale-aware docs + tooling wiring (search/web-fetch/file-io/alignment-screen) + TOOLING.md" next="P4 market-data layer (expand market-config.md)"/>
+  <status phase="P4" done="playbooks x2 locales + templates x2 locales + locale-aware docs + tooling wiring + market-config v1 (sources/query-templates/comp-methodology/employer-archetypes/inbound-channel-map; market-vs-locale distinction)" next="P5 Claude-Code adapter + smoke test"/>
 </contract>
