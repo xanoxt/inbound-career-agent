@@ -8,11 +8,11 @@
 
 - **Repo location:** a URL (for green/agent-driven paths) or a local clone path (usual path).
 - **Workspace target dir:** confirm with the user; suggest `~/career-agent/` or let them choose.
-- **Active locale:** the user's working language (what they read). Default `ru`. Available: `ru`, `en`. Selects which `playbooks/<locale>/` and `templates/<locale>/` are copied.
+- **Active locale:** the user's working language (what they read). Default `en`. Available: `en`, `ru`. Selects which `playbooks/<locale>/` and `templates/<locale>/` are copied.
 
 ## Steps
 
-1. **Confirm the workspace dir and the active locale** with the user (default locale `ru`). Create the dir if it does not exist. Write the chosen locale to `profile/.locale`. **Never write user data inside the repo itself.**
+1. **Confirm the workspace dir and the active locale** with the user (default locale `en`). Create the dir if it does not exist. Write the chosen locale to `profile/.locale`. **Never write user data inside the repo itself.**
 2. **Scaffold the workspace:**
    - `profile/` — empty (user data lands here during Ritual A).
    - `output/` — empty (dated dossiers in the active locale).
@@ -29,7 +29,7 @@
 
 ## Rules
 
-- All user-facing text is in the **active locale** (`ru` default; `en` available).
+- All user-facing text is in the **active locale** (`en` default; `ru` available).
 - Do not create materials yourself; the user supplies them.
 - Keep the workspace **portable**: plain Markdown + XML only, so it survives a tool switch (e.g., Claude Code → an open-weights setup). No tool-specific lock-in.
 - If fetching the repo over HTTP, use `webfetch` against the published **raw** file URLs (the green-path user has no git).

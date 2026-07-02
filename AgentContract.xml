@@ -9,7 +9,7 @@
   <meta>
     <name>Inbound Career Agent</name>
     <architecture tier="orchestrator + playbooks" crew="single-agent"/>
-    <language user-facing="ru|en" default="ru" internals="en" note="locales live under playbooks/{lang}/ and templates/{lang}/; chosen in SETUP, stored in profile/.locale"/>
+    <language user-facing="en|ru" default="en" internals="en" note="locales live under playbooks/{lang}/ and templates/{lang}/; chosen in SETUP, stored in profile/.locale"/>
     <search default="tavily" fallback="deepseek-websearch-mcp"/>
   </meta>
 

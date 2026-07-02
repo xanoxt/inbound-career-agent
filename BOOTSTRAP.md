@@ -49,9 +49,9 @@ No capability playbook runs before Ritual B is confirmed.
 | `LAUNCHER.md` | Green-path self-applying launcher (sent to not-agent-ready users) | RU + EN |
 | `AgentContract.xml` | Role + tool definitions (XML-DOM, tool-agnostic) | EN |
 | `TOOLING.md` | Search-provider setup (Tavily, DeepSeek MCP) | EN |
-| `playbooks/ru/`, `playbooks/en/` | Capability runbooks per locale | per locale |
-| `templates/ru/`, `templates/en/` | Blank templates per locale, copied into the workspace | per locale |
-| `market-config.md` | Market source map (RU default, swappable) | RU |
+| `playbooks/en/`, `playbooks/ru/` | Capability runbooks per locale | per locale |
+| `templates/en/`, `templates/ru/` | Blank templates per locale, copied into the workspace | per locale |
+| `market-config.md` | Market source map (RU market; swappable) | RU |
 | `claude-code-adapter/` | Optional Claude Code wiring (CLAUDE.md pointer + README) | EN |
 | `git-helper/` | Step-by-step git setup for path-2 stragglers | RU + EN |
 | `scripts/smoke_test.py` | Reusable repo-consistency smoke test | EN |
@@ -63,7 +63,7 @@ No capability playbook runs before Ritual B is confirmed.
 
 ## 8. Language rule
 
-- **Human-facing output:** the active locale — **RU** (default) or **EN**. Chosen in `SETUP.md`, stored in `profile/.locale`.
+- **Human-facing output:** the active locale — **EN** (default) or **RU**. Chosen in `SETUP.md`, stored in `profile/.locale`.
 - **Machine-readable internals** (this file, `AGENTS.md`, `AgentContract.xml`, `SETUP.md`): English (EN).
 - Playbooks/templates ship per locale under `playbooks/<lang>/`, `templates/<lang>/`. RU is the shipped default market; swappable via `market-config.md`.
 

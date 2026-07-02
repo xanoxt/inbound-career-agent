@@ -6,7 +6,7 @@
 ## What to do (on launch)
 
 1. Read `AGENTS.md` and `BOOTSTRAP.md` now.
-2. Execute `SETUP.md` (scaffold workspace; choose locale → write `profile/.locale`, default `ru`).
+2. Execute `SETUP.md` (scaffold workspace; choose locale → write `profile/.locale`, default `en`).
 3. Run **Ritual A** → **Ritual B** (in `playbooks/<locale>/`).
 4. Only after the user explicitly confirms positioning, run capability playbooks `01`–`07`.
 
