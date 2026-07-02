@@ -28,6 +28,7 @@ No git yet? See `git-helper/`.
 - `SETUP.md` — workspace scaffolding flow.
 - `LAUNCHER.md` — green-path launcher.
 - `AgentContract.xml` — role + tool definitions.
+- `TOOLING.md` — search-provider setup (Tavily, DeepSeek MCP).
 - `playbooks/ru/`, `playbooks/en/` — capability runbooks per locale (RU default).
 - `templates/ru/`, `templates/en/` — blank templates per locale, copied into your workspace.
 - `market-config.md` — market source map (RU default, swappable).

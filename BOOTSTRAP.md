@@ -48,6 +48,7 @@ No capability playbook runs before Ritual B is confirmed.
 | `SETUP.md` | Workspace scaffolding flow | EN |
 | `LAUNCHER.md` | Green-path self-applying launcher (sent to not-agent-ready users) | RU + EN |
 | `AgentContract.xml` | Role + tool definitions (XML-DOM, tool-agnostic) | EN |
+| `TOOLING.md` | Search-provider setup (Tavily, DeepSeek MCP) | EN |
 | `playbooks/ru/`, `playbooks/en/` | Capability runbooks per locale | per locale |
 | `templates/ru/`, `templates/en/` | Blank templates per locale, copied into the workspace | per locale |
 | `market-config.md` | Market source map (RU default, swappable) | RU |
