@@ -43,13 +43,13 @@
   <playbooks>
     <playbook id="00-ritual-A-intake"        phase="P1" status="done"/>
     <playbook id="00-ritual-B-explication"   phase="P1" status="done"/>
-    <playbook id="01-market-sense"           phase="P2" status="planned"/>
-    <playbook id="02-qualify-inbound"        phase="P2" status="planned"/>
-    <playbook id="03-brand-engine"           phase="P2" status="planned"/>
-    <playbook id="04-profile-optimize"       phase="P2" status="planned"/>
-    <playbook id="05-conversation-prep"      phase="P2" status="planned"/>
-    <playbook id="06-active-search-fallback" phase="P2" status="planned"/>
-    <playbook id="07-weekly-digest"          phase="P2" status="planned"/>
+    <playbook id="01-market-sense"           phase="P2" status="done"/>
+    <playbook id="02-qualify-inbound"        phase="P2" status="done"/>
+    <playbook id="03-brand-engine"           phase="P2" status="done"/>
+    <playbook id="04-profile-optimize"       phase="P2" status="done"/>
+    <playbook id="05-conversation-prep"      phase="P2" status="done"/>
+    <playbook id="06-active-search-fallback" phase="P2" status="done"/>
+    <playbook id="07-weekly-digest"          phase="P2" status="done"/>
   </playbooks>
 
   <constraints>
@@ -60,5 +60,5 @@
     <c>Never infer positioning; always ask (Ritual A).</c>
   </constraints>
 
-  <status phase="P1" done="repo-skeleton, on-ramp-docs, contract-stub, intake-playbook, explication-playbook" next="P2 the 7 capability playbooks"/>
+  <status phase="P2" done="all 9 playbooks (2 rituals + 7 capabilities) + 3 templates" next="P3 tooling wiring (Tavily, DeepSeek MCP)"/>
 </contract>
