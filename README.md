@@ -11,7 +11,7 @@ A self-bootstrapping, **tool-agnostic skill pack** that turns your coding agent 
 - Active job-search is a **secondary fallback**, not the main loop.
 
 ## How it works
-A single orchestrator (the agent you launch) + 7 playbooks (read on demand). **API-only** (no scraping). **Human-in-the-loop** (drafts only; you approve everything). Output in your language (Russian shipped by default).
+A single orchestrator (the agent you launch) + 7 playbooks (read on demand). **API-only** (no scraping). **Human-in-the-loop** (drafts only; you approve everything). Output in your language (Russian by default; English available).
 
 ## Three on-ramps
 | Path | For | How |
@@ -28,8 +28,8 @@ No git yet? See `git-helper/`.
 - `SETUP.md` — workspace scaffolding flow.
 - `LAUNCHER.md` — green-path launcher.
 - `AgentContract.xml` — role + tool definitions.
-- `playbooks/` — capability runbooks (RU).
-- `templates/` — blank templates copied into your workspace.
+- `playbooks/ru/`, `playbooks/en/` — capability runbooks per locale (RU default).
+- `templates/ru/`, `templates/en/` — blank templates per locale, copied into your workspace.
 - `market-config.md` — market source map (RU default, swappable).
 - `claude-code-adapter/`, `git-helper/` — optional helpers.
 

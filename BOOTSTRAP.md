@@ -48,21 +48,21 @@ No capability playbook runs before Ritual B is confirmed.
 | `SETUP.md` | Workspace scaffolding flow | EN |
 | `LAUNCHER.md` | Green-path self-applying launcher (sent to not-agent-ready users) | RU + EN |
 | `AgentContract.xml` | Role + tool definitions (XML-DOM, tool-agnostic) | EN |
-| `playbooks/` | Capability runbooks, one per skill | RU |
-| `templates/` | Blank templates copied into the workspace | RU |
+| `playbooks/ru/`, `playbooks/en/` | Capability runbooks per locale | per locale |
+| `templates/ru/`, `templates/en/` | Blank templates per locale, copied into the workspace | per locale |
 | `market-config.md` | Market source map (RU default, swappable) | RU |
 | `claude-code-adapter/` | Optional Claude Code wiring | EN |
 | `git-helper/` | Step-by-step git setup for path-2 stragglers | RU + EN |
 
 ## 7. Workspace (generated on the user's machine, NOT in the repo)
 
-`profile/` (user data), `output/` (dated RU dossiers), a copy of `playbooks/`. The repo contains only generic material.
+`profile/` (user data), `output/` (dated dossiers in the active locale), a copy of `playbooks/<locale>/`. The repo contains only generic material.
 
 ## 8. Language rule
 
-- **Human-facing output:** Russian (RU).
+- **Human-facing output:** the active locale — **RU** (default) or **EN**. Chosen in `SETUP.md`, stored in `profile/.locale`.
 - **Machine-readable internals** (this file, `AGENTS.md`, `AgentContract.xml`, `SETUP.md`): English (EN).
-- RU is the shipped default market; swappable via `market-config.md` for other markets.
+- Playbooks/templates ship per locale under `playbooks/<lang>/`, `templates/<lang>/`. RU is the shipped default market; swappable via `market-config.md`.
 
 ## 9. Constraints (hard)
 

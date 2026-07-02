@@ -9,7 +9,7 @@
   <meta>
     <name>Inbound Career Agent</name>
     <architecture tier="orchestrator + playbooks" crew="single-agent"/>
-    <language user-facing="ru" internals="en"/>
+    <language user-facing="ru|en" default="ru" internals="en" note="locales live under playbooks/{lang}/ and templates/{lang}/; chosen in SETUP, stored in profile/.locale"/>
     <search default="tavily" fallback="deepseek-websearch-mcp"/>
   </meta>
 
@@ -60,5 +60,5 @@
     <c>Never infer positioning; always ask (Ritual A).</c>
   </constraints>
 
-  <status phase="P2" done="all 9 playbooks (2 rituals + 7 capabilities) + 3 templates" next="P3 tooling wiring (Tavily, DeepSeek MCP)"/>
+  <status phase="P2" done="all 9 playbooks x2 locales (ru+en) + 3 templates x2 locales + locale-aware on-ramp docs" next="P3 tooling wiring (Tavily, DeepSeek MCP)"/>
 </contract>
