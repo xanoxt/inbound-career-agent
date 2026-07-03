@@ -29,6 +29,7 @@ No git yet? See `git-helper/`.
 - `LAUNCHER.md` — green-path launcher.
 - `AgentContract.xml` — role + tool definitions.
 - `TOOLING.md` — search-provider setup (Tavily, DeepSeek MCP).
+- `VOICE.md` — gathering the user's writing to model their voice.
 - `playbooks/en/`, `playbooks/ru/` — capability runbooks per locale (EN default).
 - `templates/en/`, `templates/ru/` — blank templates per locale, copied into your workspace.
 - `market-config.md` — market source map (RU market; swappable).

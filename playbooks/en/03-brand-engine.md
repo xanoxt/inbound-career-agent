@@ -3,7 +3,7 @@
 > **When to run:** once a week (part of the digest rhythm). This is the **main magnet** for inbound demand.
 > **Output language:** active locale per channel.
 > **Mode:** human-in-the-loop. **Never publish yourself.**
-> **Inputs:** `profile/positioning.md` (esp. sections 1, 4, 11 — anchor cases), `profile/intake-answers.md` (voice — user's quotes).
+> **Inputs:** `profile/positioning.md` (esp. sections 1, 4, 11 — anchor cases), `profile/voice-summary.md` (modeled voice; if absent, quotes from `intake-answers.md`).
 
 ---
 
@@ -26,7 +26,7 @@ One post a week. Rotate three types:
 **Type:** craft | POV | case
 **Channels:** [blog / newsletter / LinkedIn / community — per the user's channels in §10]
 **Anchor case (if case/craft):** link to positioning.md §11
-**Voice:** [what tone, from intake quotes]
+**Voice:** [tone from voice-summary.md]
 
 --- (post body) ---
 
@@ -37,9 +37,10 @@ One post a week. Rotate three types:
 
 ## Rules
 
-1. **The user's voice, not yours.** Use phrasing from `intake-answers.md`. Unsure of tone — offer 2 variants.
+1. **The user's voice, not yours.** Draw on `profile/voice-summary.md` first (if present); else quotes from `intake-answers.md`. Unsure of tone — offer 2 variants.
 2. **From anchor cases.** Every craft/case post grows out of §11 of `positioning.md`. Don't invent cases.
 3. **No self-assigned domain.** Don't pull in "psychology/healthtech" the user didn't name. Topics come from their positioning.
 4. **2 headlines + a CTA** always — give a choice, not a final.
 5. **Draft only.** Publishing is solely the user's. The digest (07) picks it up under "ready to publish."
 6. Length per channel: a short community post ≠ a long-form blog. Respect it.
+7. **Anti-slop.** Before showing a draft to the user, run an "AI-tell" pass (clichés, rhythm, passive voice, etc.). Reference (don't copy into the repo): stop-slop — https://github.com/hardikpandya/stop-slop (scores Directness/Rhythm/Trust/Authenticity/Density; <35/50 → revise). The user's `voice-summary.md` overrides any generic rule.

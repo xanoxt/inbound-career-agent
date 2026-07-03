@@ -31,6 +31,17 @@ Ask the user to provide (in parts is fine — links or files in `profile/materia
 
 ---
 
+## 1b. Voice samples (for content)
+
+The Brand Engine (playbook 03) writes posts in the user's voice, not a generic "AI voice." For that it needs samples of how the user already writes.
+
+- Ask where the user publishes: Telegram channel, Substack, personal blog, LinkedIn, local blog platforms, Facebook, etc.
+- Collect 10–30 representative posts. Methods in `VOICE.md` (from a Telegram export to pasting text).
+- Store raw samples in `profile/voice/`; write `profile/voice-summary.md` (register/tone, recurring phrases, structural habits, 5–10 verbatim signature lines, anti-patterns).
+- If they have no publications yet — note it in `voice-summary.md` ("voice being formed"); the Brand Engine then leans on intake quotes and flags this to the user.
+
+---
+
 ## 2. Questionnaire (adapted for senior level)
 
 Ask by section. Soften phrasing to conversational; keep intent.
