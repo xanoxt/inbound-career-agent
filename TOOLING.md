@@ -49,7 +49,7 @@ Selection + fallback rule lives in `AgentContract.xml` (`tool id="search"`): def
 }
 ```
 
-Place at the project root (or user-level config per your tool). Only one provider is required; include both if you want automatic fallback.
+Place at the project root (or user-level config per your tool). Only one provider is required; include both if you want automatic fallback. The repo ships a safe template at `.mcp.example.json` — copy it to `.mcp.json` and fill in the keys. **`.mcp.json` is gitignored** (never commit real keys).
 
 ## Security
 

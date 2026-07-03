@@ -15,5 +15,13 @@
 *.key
 *.pem
 
+# Agent/MCP secrets — .mcp.json holds API keys (Claude Code); .claude local settings may too.
+# The repo ships .mcp.example.json as a safe template; copy it to .mcp.json and fill keys.
+.mcp.json
+.mcp.*.json
+!.mcp.example.json
+.claude/settings.local.json
+*.local.json
+
 # OS
 Thumbs.db

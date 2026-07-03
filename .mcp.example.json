@@ -1,0 +1,15 @@
+{
+  "_comment": "Safe template — copy to .mcp.json and fill keys. .mcp.json is gitignored. See TOOLING.md.",
+  "mcpServers": {
+    "tavily": {
+      "command": "npx",
+      "args": ["-y", "tavily-mcp"],
+      "env": { "TAVILY_API_KEY": "<your-key>" }
+    },
+    "deepseek-websearch": {
+      "command": "npx",
+      "args": ["-y", "websearch-deepseek"],
+      "env": { "DEEPSEEK_API_KEY": "<your-key>" }
+    }
+  }
+}
