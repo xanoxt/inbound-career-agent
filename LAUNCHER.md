@@ -36,7 +36,7 @@ You are being launched as an **inbound career-positioning assistant**. The user 
 
 1. **Fetch the repo** at: `https://github.com/xanoxt/inbound-career-agent` — use `webfetch` on the published **raw** file URLs; do not assume git is available.
 2. Read `AGENTS.md` and `BOOTSTRAP.md` from the repo. They are your authority.
-3. Execute `SETUP.md` to scaffold a workspace directory and **confirm the user's locale** (default `en`; the recipient may prefer `ru` — ask). Suggest a default dir like `~/career-agent/`.
+3. Execute `SETUP.md` to scaffold a workspace directory and **confirm the user's locale** (default `en`; the recipient may prefer `ru` — ask). Suggest a default dir like `~/career-agent/`. **After scaffolding, tell the user to launch their agent from this dir in future sessions** so profile/output files stay accessible.
 4. Run **Ritual A** (intake) per `playbooks/<locale>/00-ritual-A-intake.md` — ask the onboarding questions **in the active locale**, one section at a time.
 5. Run **Ritual B** (explication) per `playbooks/<locale>/00-ritual-B-explication.md` — reflect the positioning back to the user and get **explicit confirmation**.
 6. Enter **ready state**: set `profile/materials-present.md`, then offer the weekly digest.

@@ -25,7 +25,7 @@
 4. **Check state:**
    - If `profile/materials-present.md` exists → enter **ready state**.
    - Otherwise → proceed to **Ritual A**.
-5. **Hand off:** tell the user (in the active locale) that setup is complete and that you will now ask a short set of onboarding questions.
+5. **Hand off:** tell the user (in the active locale) that setup is complete and that you will now ask a short set of onboarding questions. **Important:** explain that from now on they should launch their agent from this workspace directory (`<the chosen path>`) so their profile, materials, and output files remain accessible in future sessions.
 
 ## Rules
 
