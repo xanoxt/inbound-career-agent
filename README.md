@@ -2,7 +2,8 @@
 
 A self-bootstrapping, **tool-agnostic skill pack** that turns your coding agent (Claude Code, open-weights, etc.) into an **inbound career-positioning assistant** — helping senior specialists get the *right* people to come to them, aligned on goals, instead of spraying job applications.
 
-> **Status:** v1 build in progress (P0). First worked example: a Senior UX/UI Product Design Lead (St Petersburg). The pack itself is **generic** — your positioning comes from your own onboarding, never baked in.
+> **Status:** v1 (complete) — https://github.com/xanoxt/inbound-career-agent · MIT · © 2026 Petr Asalkhanov  
+> First worked example: a Senior UX/UI Product Design Lead (St Petersburg). The pack itself is **generic** — your positioning comes from your own onboarding, never baked in.
 
 ## What it does
 - **Signal** — make you findable and compelling to the right audience.

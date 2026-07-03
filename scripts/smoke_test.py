@@ -64,9 +64,15 @@ for p in ROOT.rglob("*"):
             stale.append(f"{p.relative_to(ROOT)}: {m}")
 check("no stale root-level playbook refs", not stale, "; ".join(stale[:5]))
 
-# 5. LAUNCHER placeholder present (expected pre-publish)
-launcher = (ROOT / "LAUNCHER.md").read_text(encoding="utf-8")
-check("LAUNCHER <REPO_URL> placeholder present (expected pre-publish)", "<REPO_URL>" in launcher)
+# 5. No dangling placeholders (post-publish)
+remaining = []
+for p in ROOT.rglob("*"):
+    if p.is_file() and p.suffix in (".md", ".xml", ".json"):
+        txt = p.read_text(encoding="utf-8", errors="ignore")
+        for placeholder, name in [("<REPO_URL>", "<REPO_URL>"), ("<org>", "<org>")]:
+            if placeholder in txt:
+                remaining.append(f"{p.relative_to(ROOT)}: {name}")
+check("no dangling <REPO_URL> or <org> placeholders (post-publish)", not remaining, "; ".join(remaining))
 
 # 6. Locale parity
 pcounts = {loc: len(list((ROOT / "playbooks" / loc).glob("*.md"))) for loc in LOCALES}

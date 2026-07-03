@@ -34,7 +34,7 @@ Now: paste the text below to your agent and say "go".
 
 You are being launched as an **inbound career-positioning assistant**. The user is on the **green path** (not agent-savvy, possibly no git). Execute now:
 
-1. **Fetch the repo** at: `<REPO_URL>` — use `webfetch` on the published **raw** file URLs; do not assume git is available.
+1. **Fetch the repo** at: `https://github.com/xanoxt/inbound-career-agent` — use `webfetch` on the published **raw** file URLs; do not assume git is available.
 2. Read `AGENTS.md` and `BOOTSTRAP.md` from the repo. They are your authority.
 3. Execute `SETUP.md` to scaffold a workspace directory and **confirm the user's locale** (default `en`; the recipient may prefer `ru` — ask). Suggest a default dir like `~/career-agent/`.
 4. Run **Ritual A** (intake) per `playbooks/<locale>/00-ritual-A-intake.md` — ask the onboarding questions **in the active locale**, one section at a time.
@@ -45,4 +45,4 @@ You are being launched as an **inbound career-positioning assistant**. The user 
 
 ---
 
-> **Maintainer:** before sending, replace `<REPO_URL>` with the published raw base URL of this repo (e.g. `https://raw.githubusercontent.com/<org>/inbound-career-agent/main`). Keep this file self-contained — it is meant to be copied whole. For a Russian-speaking recipient the RU note above is already in place; the agent still confirms locale in SETUP.
+> **Maintainer:** Repo URL: https://github.com/xanoxt/inbound-career-agent · Raw base: https://raw.githubusercontent.com/xanoxt/inbound-career-agent/main. This launcher is now published; adjust the URLs if you fork the repo. Keep the file self-contained — it is meant to be copied whole. For a Russian-speaking recipient the RU note above is already in place; the agent still confirms locale in SETUP.

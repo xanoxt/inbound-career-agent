@@ -23,10 +23,10 @@ git config --global user.email "you@example.com"
 
 ### 3. Клонируйте репозиторий навыков
 ```
-git clone <REPO_URL> inbound-career-agent
+git clone https://github.com/xanoxt/inbound-career-agent.git inbound-career-agent
 cd inbound-career-agent
 ```
-(замените `<REPO_URL>` на ссылку, которую вам дали.)
+# ссылка уже подставлена; для форка замените URL.
 
 ### 4. Запустите агента
 Откройте эту папку в вашем агенте (Claude Code) и скажите: «прочитай `AGENTS.md` и настрой рабочее пространство по `SETUP.md`». Дальше агент всё сделает сам.
@@ -55,7 +55,7 @@ git config --global user.email "you@example.com"
 
 ### 3. Clone the skill pack
 ```
-git clone <REPO_URL> inbound-career-agent
+git clone https://github.com/xanoxt/inbound-career-agent.git inbound-career-agent
 cd inbound-career-agent
 ```
 

@@ -16,7 +16,7 @@ python3 scripts/smoke_test.py
 | 2 | All 9 contract playbooks exist in both locales (ru, en) | ✅ |
 | 3 | All templates exist in both locales | ✅ |
 | 4 | No stale root-level playbook refs (bare `playbooks/00-…` without a locale dir) | ✅ |
-| 5 | `LAUNCHER.md` carries the `<REPO_URL>` placeholder (expected pre-publish) | ✅ |
+| 5 | No unconverted placeholders remain in doc/code files | ✅ |
 | 6 | Locale parity — playbook counts equal (`ru: 9, en: 9`) | ✅ |
 | 7 | Locale parity — template counts equal (`ru: 3, en: 3`) | ✅ |
 
@@ -24,5 +24,5 @@ python3 scripts/smoke_test.py
 
 ## Notes
 
-- Check 5 is intentionally a "placeholder present" gate — `<REPO_URL>` must be filled **only at publish time**, so its presence pre-publish is correct.
+- Check 5 verifies no unconverted angle-bracket placeholders remain anywhere in the repo (post-publish gate).
 - The smoke test catches the most common regression: referencing a playbook by its old root-level path after the locale split. If you add a new playbook/template, update `AgentContract.xml` and both locales, then re-run.
